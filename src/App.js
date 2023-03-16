@@ -1,23 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import Lista from './componetes/Listaanimales/Lista';
+
+const datosAnimal =[
+  {
+    nombre:'lulu',
+    especie:'perro',
+    genero:'F',
+    edad:12
+  },
+  {
+    nombre:'michi',
+    especie:'gato',
+    genero:'M',
+    edad:2
+  },
+  {
+    nombre:'coco',
+    especie:'ave',
+    genero:'M',
+    edad:4
+  },
+  {
+    nombre:'luna',
+    especie:'perro',
+    genero:'F',
+    edad:6
+  }
+
+]
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Lista lista={datosAnimal}/>
+
     </div>
   );
 }
